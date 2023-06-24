@@ -3,7 +3,10 @@
 " Copy/yank always to plus register (clipboard)
 set clipboard+=unnamedplus
 
-"set list
+" Listchars
+set list
+" show spaces as '.'
+set listchars+=space:.
 
 set foldmethod=marker
 

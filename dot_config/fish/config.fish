@@ -48,7 +48,7 @@ fish_add_path "$HOME/.local/bin"
 # Consider adding with -U so saved in fish_variables instead
 
 # Git Homedir strategy
-abbr --add --global conf 'git --git-dir=$HOME/.git-conf --work-tree=$HOME' 
+#abbr --add --global conf 'git --git-dir=$HOME/.git-conf --work-tree=$HOME' 
 
 abbr --add --global v nvim
 abbr --add --global s sudo
@@ -66,6 +66,7 @@ abbr --add --global glp 'git log  --decorate --graph --oneline --all'
 abbr --add --global gp 'git push'
 abbr --add --global gpl 'git pull'
 abbr --add --global gs 'git status -sb'
+abbr --add --global cz chezmoi
 
 
 
