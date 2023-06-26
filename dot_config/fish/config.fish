@@ -11,8 +11,8 @@ end
 
 # Environment Variables {{{1
 #
-set -x EDITOR nvim
-set -x LESS "--ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS --tabs=4 --window=-4"
+set -gx EDITOR nvim
+set -gx LESS "--ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS --tabs=4 --window=-4"
 
 set -gx XDG_CONFIG_HOME "$HOME/.config"
 
