@@ -74,8 +74,10 @@ filetype plugin on
 
 call plug#begin()
 
+Plug 'ojroques/nvim-osc52'
+
 " Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
-Plug 'junegunn/vim-easy-align'
+" Plug 'junegunn/vim-easy-align'
 
 "Plug 'nelstrom/vim-markdown-folding'
 
@@ -86,10 +88,10 @@ Plug 'junegunn/vim-easy-align'
 
 " Easy align plug-in
 " Start interactive EasyAlign in visual mode (e.g. vipga)
-xmap ga <Plug>(EasyAlign)
+" xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
-nmap ga <Plug>(EasyAlign)
+" nmap ga <Plug>(EasyAlign)
 
 
 call plug#end()
