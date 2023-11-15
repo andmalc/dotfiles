@@ -1,7 +1,7 @@
-Host f38cge
-	HostName  35.229.41.168
+Host f38gce
+	HostName 35.229.41.168
 	IdentityFile ~/.ssh/id_ecdsa
-	LocalForward 8000 127.0.0.1:8000
+	#LocalForward 8000 127.0.0.1:8000
 
 
 Host dietpi
