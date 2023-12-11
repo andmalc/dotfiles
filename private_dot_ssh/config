@@ -1,5 +1,5 @@
 Host f38gce
-	HostName 35.229.41.168
+	HostName 34.148.136.206
 	IdentityFile ~/.ssh/id_ecdsa
 	#LocalForward 8000 127.0.0.1:8000
 
