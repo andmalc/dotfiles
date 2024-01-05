@@ -1,8 +1,11 @@
 Host f38gce
-	HostName 34.148.136.206
+	HostName andmalc-gce.duckdns.org
 	IdentityFile ~/.ssh/id_ecdsa
 	#LocalForward 8000 127.0.0.1:8000
 
+Host upstairs
+        HostName 192.168.88.60
+        IdentityFile ~/.ssh/id_ecdsa.pub
 
 Host dietpi
 	HostName 100.86.166.112
