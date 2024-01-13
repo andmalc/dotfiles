@@ -82,16 +82,12 @@ bind \b backward-delete-char
 # Fisher function and its plugins to install to .local/share/fisher
 set -g fisher_path ~/.local/share/fisher
 
-#for file in $fisher_path/conf.d/*.fish
-#    builtin source $file 2> /dev/null
-#end
-
 # Kitty Term Shell Integration for within containers {{{1
 # https://sw.kovidgoyal.net/kitty/shell-integration/#manual-shell-integration
 
-if set -q KITTY_INSTALLATION_DIR
-    set --global KITTY_SHELL_INTEGRATION enabled
-    source "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish"
-    set --prepend fish_complete_path "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_completions.d"
-end
+#if set -q KITTY_INSTALLATION_DIR
+#    set --global KITTY_SHELL_INTEGRATION enabled
+#    source "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish"
+#    set --prepend fish_complete_path "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_completions.d"
+#end
 
