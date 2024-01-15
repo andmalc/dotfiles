@@ -42,6 +42,7 @@ fish_add_path "$HOME/.local/bin"
 
 # Remote/SSH hostname colour in prompt
 #set -gx fish_color_host_remote red
+set -gx fish_color_quote green
 
 
 # Abbreiations {{{1
