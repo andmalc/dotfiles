@@ -42,6 +42,7 @@ fish_add_path "$HOME/.local/bin"
 
 # Remote/SSH hostname colour in prompt
 #set -gx fish_color_host_remote red
+set -gx fish_color_quote green
 
 
 # Abbreiations {{{1
@@ -77,21 +78,4 @@ abbr --add --global cz chezmoi
 # Ctrl H = backspace
 bind \b backward-delete-char
 
-# Plugins {{{1
-#
-# Fisher function and its plugins to install to .local/share/fisher
-set -g fisher_path ~/.local/share/fisher
-
-#for file in $fisher_path/conf.d/*.fish
-#    builtin source $file 2> /dev/null
-#end
-
-# Kitty Term Shell Integration for within containers {{{1
-# https://sw.kovidgoyal.net/kitty/shell-integration/#manual-shell-integration
-
-if set -q KITTY_INSTALLATION_DIR
-    set --global KITTY_SHELL_INTEGRATION enabled
-    source "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_conf.d/kitty-shell-integration.fish"
-    set --prepend fish_complete_path "$KITTY_INSTALLATION_DIR/shell-integration/fish/vendor_completions.d"
-end
 

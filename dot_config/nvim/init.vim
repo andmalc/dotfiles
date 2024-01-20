@@ -4,7 +4,7 @@
 set clipboard+=unnamedplus
 
 " Listchars
-set list
+" set list
 " show spaces as '.'
 set listchars+=space:.
 
