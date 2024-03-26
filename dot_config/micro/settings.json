@@ -1,5 +1,6 @@
 {
     "clipboard": "terminal",
-    "ignorecase": true,
+    "colorscheme": "bubblegum",
+    "diffgutter": true,
     "scrollbar": true
 }

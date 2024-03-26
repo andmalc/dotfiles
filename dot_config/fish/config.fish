@@ -12,7 +12,7 @@ end
 # Environment Variables {{{1
 #
 set -gx EDITOR nvim
-set -gx LESS "--ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS --tabs=4 --window=-4 -n"
+set -gx LESS "--ignore-case --LONG-PROMPT --RAW-CONTROL-CHARS --tabs=4 --window=-4"
 
 set -gx XDG_CONFIG_HOME "$HOME/.config"
 
@@ -40,10 +40,14 @@ export FZF_DEFAULT_COMMAND="fd --type f"
 # Default is -U 
 fish_add_path "$HOME/.local/bin"
 
+# Colors {{{1
+
 # Remote/SSH hostname colour in prompt
 #set -gx fish_color_host_remote red
 set -gx fish_color_quote green
 
+# Auto complete color
+set fish_color_autosuggestion red
 
 # Abbreiations {{{1
 # Consider adding with -U so saved in fish_variables instead

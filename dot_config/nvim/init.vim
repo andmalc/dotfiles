@@ -1,7 +1,7 @@
 " Interface {{{1
 
 " Copy/yank always to plus register (clipboard)
-set clipboard+=unnamedplus
+"set clipboard+=unnamedplus
 
 " Listchars
 " set list
