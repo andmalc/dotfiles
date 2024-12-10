@@ -1,6 +1,9 @@
 " Interface {{{1
 
 " Copy/yank always to plus register (clipboard)
+" Nvim .10 2024 recommends leaving clipboard unset for use over ssh
+" Use Ctrl+Shift+v to paste into Nvim and "+ to copy within Nvim.  Help at
+" quoteplus
 "set clipboard+=unnamedplus
 
 " Listchars

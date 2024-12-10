@@ -1,7 +1,8 @@
-Host f39gce
+Host f41gce
 	HostName andmalc-gce.duckdns.org
+	User core
 	IdentityFile ~/.ssh/id_ecdsa
-	#LocalForward 8000 127.0.0.1:8000
+	#	LocalForward 8000 127.0.0.1:8000
 
 Host upstairs
         HostName 192.168.88.60
