@@ -6,7 +6,7 @@ set fish_prompt_pwd_dir_length 3
 
 # prevent CDPATH from being read by shell scripts
 if status --is-interactive
-#	set CDPATH ~ ~/config ~/notes ~/work $CDPATH
+	set CDPATH ~ ~/config ~/notes ~/work $CDPATH
 end
 
 # Environment Variables {{{1
@@ -39,6 +39,7 @@ export FZF_DEFAULT_COMMAND="fd --type f"
 # Changes $fish_user_paths
 # Default is -U 
 fish_add_path "$HOME/.local/bin"
+
 
 # Colors {{{1
 
@@ -73,7 +74,7 @@ abbr --add --global gpl 'git pull'
 abbr --add --global gs 'git status -sb'
 abbr --add --global cz chezmoi
 
-
+abbr --add --global exa-tree 'exa -l --group-directories-first --tree'
 
 # Bindings {{{1
 # Here or add to fish_key_bindings function?
