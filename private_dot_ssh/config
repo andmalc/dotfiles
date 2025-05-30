@@ -1,12 +1,16 @@
-Host f41gce
+Host f42gce
 	HostName andmalc-gce.duckdns.org
 	User core
 	IdentityFile ~/.ssh/id_ecdsa
 	#	LocalForward 8000 127.0.0.1:8000
 
-Host upstairs
-        HostName 192.168.88.60
-        IdentityFile ~/.ssh/id_ecdsa.pub
+Host f42gce-tb
+	HostName andmalc-gce.duckdns.org
+	User core
+	IdentityFile ~/.ssh/id_ecdsa
+	RemoteCommand exec toolbox enter f42
+	RequestTTY force
+	#	LocalForward 8000 127.0.0.1:8000
 
 Host dietpi
 	HostName 100.86.166.112

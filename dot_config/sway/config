@@ -1,7 +1,0 @@
-# Terminal
-include /etc/sway/config
-
-#set $mod Mod4
-#bindsym $mod+Return exec $term
-set $term kitty
-
