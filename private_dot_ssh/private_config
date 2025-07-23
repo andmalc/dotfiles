@@ -1,7 +1,7 @@
-Host f42gce
+Host debian-gce
 	HostName andmalc-gce.duckdns.org
-	User core
-	IdentityFile ~/.ssh/id_ecdsa
+	User andmalc
+	IdentityFile ~/.ssh/id_ed25519
 	#	LocalForward 8000 127.0.0.1:8000
 
 Host f42gce-tb
@@ -12,11 +12,7 @@ Host f42gce-tb
 	RequestTTY force
 	#	LocalForward 8000 127.0.0.1:8000
 
-Host dietpi
-	HostName 100.86.166.112
-	IdentityFile ~/.ssh/id_ecdsa
-	LocalForward 8000 127.0.0.1:8000
-
 Host *
 	ForwardAgent yes
-
+	StrictHostKeyChecking no
+	UserKnownHostsFile /dev/null
